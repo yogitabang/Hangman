@@ -11,9 +11,9 @@ class HangmanPlayer:
 	def isTheCharacterRight(self,character):
 		if(self.count!=0 and self.isRight(character)):
 			tempList = self.findAll(self.hangmanString,character)
-			print(self.findAll(self.hangmanString,character))
+			#print(self.findAll(self.hangmanString,character))
 			for i in range(0,len(tempList)):
-				self.playerTwoString.insert(int(tempList[i]),character)
+				self.playerTwoString[tempList[i]] = character
 			self.win += len(tempList)
 		else:
 			self.count-=1
