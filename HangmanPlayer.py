@@ -1,5 +1,5 @@
 
-class HangmanPlayer1:
+class HangmanPlayer:
 	
 	def __init__(self,hangmanString):
 		self.count = 7
