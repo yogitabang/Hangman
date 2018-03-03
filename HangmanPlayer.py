@@ -5,7 +5,7 @@ class HangmanPlayer:
 		self.count = 7
 		self.number = len(hangmanString)
 		self.hangmanString = hangmanString
-		self.playerTwoString = ['0'] * self.number 
+		self.playerTwoString = ['_'] * self.number 
 		self.win = 0
 
 	def isTheCharacterRight(self,character):
